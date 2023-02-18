@@ -7,7 +7,7 @@ public class LevelBoundaries : MonoBehaviour
 {
     [SerializeField] private Vector2 leftAndBottomPosition;
     [SerializeField] private Vector2 rightAndTopPosition;
-    [SerializeField] private Transform player;
+    [SerializeField] private Transform currentObject;
     
     private void OnDrawGizmosSelected()
     {
@@ -24,10 +24,10 @@ public class LevelBoundaries : MonoBehaviour
     //Reference: https://www.youtube.com/watch?v=ailbszpt_AI&t=204s
     private void KeepInBounds()
     {
-        Vector3 viewPosition = player.position;
+        Vector3 viewPosition = currentObject.position;
         viewPosition.x = Mathf.Clamp(viewPosition.x, leftAndBottomPosition.x, rightAndTopPosition.x);
         viewPosition.y = Mathf.Clamp(viewPosition.y, leftAndBottomPosition.y, rightAndTopPosition.y);
-        player.position = viewPosition;
+        currentObject.position = viewPosition;
     }
     
     //////////////
