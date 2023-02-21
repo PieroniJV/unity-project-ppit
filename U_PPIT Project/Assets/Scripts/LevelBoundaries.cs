@@ -18,7 +18,10 @@ public class LevelBoundaries : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-       KeepInBounds();
+        if (currentObject != null)
+        {
+            KeepInBounds();
+        }
     }
 
     //Reference: https://www.youtube.com/watch?v=ailbszpt_AI&t=204s

@@ -15,7 +15,9 @@ public class Projectile : MonoBehaviour
     [SerializeField] private Transform exitTrigger;
 
     [SerializeField] private Transform ParentOfFirePoint;
+    [SerializeField] private float waitTime = 3f;
     
+
     private bool canShootProjectile = false;
     private bool hasShotProjectile;
     
@@ -58,9 +60,9 @@ public class Projectile : MonoBehaviour
         }
         
         
-        if (Input.GetMouseButtonDown(0) && canShootProjectile)
+        if ((Input.GetMouseButtonDown(0) || Input.GetKeyDown(KeyCode.Space)) && canShootProjectile)
         {
-            StartCoroutine(Coroutine_DisableProjectileAction(5f));
+            StartCoroutine(Coroutine_DisableProjectileAction(waitTime));
             StartCoroutine(Coroutine_Movement(v0, angle, time));  //Converts the angle to radians as sin and cosine functions use Radians instead of degrees
         }
     }
