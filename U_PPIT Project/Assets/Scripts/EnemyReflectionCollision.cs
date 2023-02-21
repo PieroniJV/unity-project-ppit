@@ -6,6 +6,7 @@ using UnityEngine;
 public class EnemyReflectionCollision : MonoBehaviour
 {
     [SerializeField] private GameObject actualEnemy;
+    [SerializeField] private GameObject tempProjectileHolder;
     
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -16,6 +17,7 @@ public class EnemyReflectionCollision : MonoBehaviour
                 actualEnemy.GetComponent<SpriteRenderer>().enabled = true;
                 actualEnemy.GetComponent<CapsuleCollider2D>().enabled = true;
             }
+            
             GetComponent<SpriteRenderer>().enabled = false;
         }       
     }

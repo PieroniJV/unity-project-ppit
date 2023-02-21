@@ -273,6 +273,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyMovement: {fileID: 1387533340}
+  enemyReflection: {fileID: 1919372173}
+  timeToWait: 5
 --- !u!4 &144260829 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 368641737497876049, guid: ed9929a8a267d8f4ca68e9673e8f75b7, type: 3}
@@ -987,7 +989,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1039664289}
-  enemySpeed: 2
+  enemySpeed: 0
 --- !u!50 &1387533341
 Rigidbody2D:
   serializedVersion: 4
@@ -1198,6 +1200,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   actualEnemy: {fileID: 123220323}
+  tempProjectileHolder: {fileID: 0}
 --- !u!70 &1919372177
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -1337,11 +1340,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2037659085749794487, guid: d637d1e340a89c047af06b16d6f6572e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.14
+      value: 23.7
       objectReference: {fileID: 0}
     - target: {fileID: 2037659085749794487, guid: d637d1e340a89c047af06b16d6f6572e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.65
+      value: -1.12
       objectReference: {fileID: 0}
     - target: {fileID: 2037659085749794487, guid: d637d1e340a89c047af06b16d6f6572e, type: 3}
       propertyPath: m_LocalPosition.z
