@@ -5,6 +5,8 @@ using UnityEngine;
 
 public class ActualEnemyCollision : MonoBehaviour
 {
+    [SerializeField] private Transform respawnPoint;
+    
     private void Awake()
     {
         GetComponent<CapsuleCollider2D>().enabled = false;
@@ -16,6 +18,12 @@ public class ActualEnemyCollision : MonoBehaviour
         if (other.CompareTag("Projectile"))
         {
             Destroy(transform.parent.gameObject);
+        }
+
+        if (other.CompareTag("Player"))
+        {
+            other.transform.position = respawnPoint.transform.position;
+            other.GetComponent<PlayerMovement>().movementSpeed = 200f;
         }
     }
 }

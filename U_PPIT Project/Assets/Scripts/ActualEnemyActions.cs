@@ -27,7 +27,7 @@ public class ActualEnemyActions : MonoBehaviour
    {
       if (actualEnemySprite.enabled)
       {
-         enemyMovement.enemySpeed = 0.6f;
+         enemyMovement.enemySpeed = 0.8f;
          StartCoroutine(Coroutine_WaitToEnterBackIntoReflectionState(timeToWait));
       }
       else

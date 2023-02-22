@@ -194,6 +194,7 @@ public class Projectile : MonoBehaviour
         _FirePoint.SetParent(ParentOfFirePoint);
         _FirePoint.position = ParentOfFirePoint.position;
         hasShotProjectile = false;
+        GetComponent<CircleCollider2D>().enabled = true;
         Debug.Log("Can now shoot projectile again");
     }
     
