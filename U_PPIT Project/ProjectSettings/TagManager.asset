@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - point
+  - Projectile
+  - BTN
   layers:
   - Default
   - TransparentFX

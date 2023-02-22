@@ -6,22 +6,29 @@ using UnityEngine.PlayerLoop;
 
 public class Projectile : MonoBehaviour
 {
-    [SerializeField] private LineRenderer _Line;
     [SerializeField] private float _Step;
-    [SerializeField] private Transform _FirePoint;
     [SerializeField] private float _Height;
-    [SerializeField] private Transform thingToPointTo;
-    [SerializeField] private MousePosition _mousePosition;
-    [SerializeField] private Transform exitTrigger;
-
-    [SerializeField] private Transform ParentOfFirePoint;
-    
+    [SerializeField] private float waitTime = 3f;
+    private LineRenderer _Line;
+    private Transform _FirePoint;
+    private Transform thingToPointTo;
+    private MousePosition _mousePosition;
+    private Transform exitTrigger;
+    private Transform ParentOfFirePoint;
     private bool canShootProjectile = false;
     private bool hasShotProjectile;
     
-    
     private void Awake()
     {
+        //Find objects in hierachy
+        _Line = GameObject.Find("Line").GetComponent<LineRenderer>();
+        _FirePoint = GameObject.Find("FirePoint").GetComponent<Transform>();
+        thingToPointTo = GameObject.Find("ThingToPointTo").GetComponent<Transform>();
+        _mousePosition = GameObject.Find("ExitTrigger").GetComponent<MousePosition>();
+        exitTrigger = GameObject.Find("ExitTrigger").GetComponent<Transform>();
+        ParentOfFirePoint = GameObject.Find("ParentOfFirePoint").GetComponent<Transform>();
+        
+        //Other assignments of variables
         hasShotProjectile = false;
         _FirePoint.position = ParentOfFirePoint.position;
         thingToPointTo.gameObject.SetActive(false);
@@ -58,9 +65,9 @@ public class Projectile : MonoBehaviour
         }
         
         
-        if (Input.GetMouseButtonDown(0) && canShootProjectile)
+        if ((Input.GetMouseButtonDown(0) || Input.GetKeyDown(KeyCode.Space)) && canShootProjectile)
         {
-            StartCoroutine(Coroutine_DisableProjectileAction(5f));
+            StartCoroutine(Coroutine_DisableProjectileAction(waitTime));
             StartCoroutine(Coroutine_Movement(v0, angle, time));  //Converts the angle to radians as sin and cosine functions use Radians instead of degrees
         }
     }
@@ -187,8 +194,10 @@ public class Projectile : MonoBehaviour
         _FirePoint.SetParent(ParentOfFirePoint);
         _FirePoint.position = ParentOfFirePoint.position;
         hasShotProjectile = false;
+        GetComponent<CircleCollider2D>().enabled = true;
         Debug.Log("Can now shoot projectile again");
     }
+    
     
 }
 
