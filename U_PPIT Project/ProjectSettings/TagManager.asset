@@ -7,6 +7,8 @@ TagManager:
   - point
   - Projectile
   - BTN
+  - Enemy Reflection
+  - Actual Enemy
   layers:
   - Default
   - TransparentFX
