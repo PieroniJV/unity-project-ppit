@@ -2,17 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+// The GameController manages the Save and Load functions of the game
+
 public class GameController : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
+    // To be implemented    
+    public void LoadGame()
     {
-        
+        Debug.Log("Load Button pressed");
     }
+  
+
 }
