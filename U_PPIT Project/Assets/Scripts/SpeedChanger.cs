@@ -5,19 +5,13 @@ using UnityEngine;
 
 public class SpeedChanger : MonoBehaviour
 {
+    [SerializeField] private float speedChange = 200f;
+    
     private void OnTriggerStay2D(Collider2D other)
     {
-        if (other.CompareTag("Player") && gameObject.name == "Mud")
+        if (other.CompareTag("Player"))
         {
-            other.GetComponent<PlayerMovement>().movementSpeed = 100f;
+            other.GetComponent<PlayerMovement>().movementSpeed = speedChange;
         }
-        else if (other.CompareTag("Player") && gameObject.name == "Water Stream")
-        {
-            other.GetComponent<PlayerMovement>().movementSpeed = 50f;
-        }else if (other.CompareTag("Player") && gameObject.CompareTag("BTN"))
-        {
-            other.GetComponent<PlayerMovement>().movementSpeed = 200f;
-        }
-        
     }
 }
