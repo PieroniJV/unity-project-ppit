@@ -15,8 +15,9 @@ public class ActualEnemyCollision : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Projectile"))
+        if (other.CompareTag("Dagger"))
         {
+            Destroy(other.gameObject);
             Destroy(transform.parent.gameObject);
         }
 

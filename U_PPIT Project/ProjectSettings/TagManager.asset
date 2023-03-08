@@ -9,6 +9,8 @@ TagManager:
   - BTN
   - Enemy Reflection
   - Actual Enemy
+  - Normal Enemy
+  - Dagger
   layers:
   - Default
   - TransparentFX
