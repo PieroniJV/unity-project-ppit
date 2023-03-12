@@ -12,9 +12,10 @@ GameObject:
   - component: {fileID: 440730387954405594}
   - component: {fileID: -4070330639716821843}
   - component: {fileID: 3930153607926572496}
+  - component: {fileID: 5082776298440104658}
   m_Layer: 0
   m_Name: Dagger
-  m_TagString: Dagger
+  m_TagString: Weapons/Dagger
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -123,3 +124,18 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.71
+--- !u!114 &5082776298440104658
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 440730387954405597}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8503df885aada9443a68b7268f5a32a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  effectToSpawn: {fileID: 1857345312582513292, guid: 59a57b3cc0e3ab845b7465aef2b3e7f5, type: 3}
+  timeToDestroyEffect: 3
+  objectToSpawnEffectOn: Normal Enemy

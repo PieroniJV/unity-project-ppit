@@ -22,7 +22,7 @@ public class EnemyReflectionCollision : MonoBehaviour
             other.GetComponent<CircleCollider2D>().enabled = false;
         }
 
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("PlayerCollider"))
         {
             other.transform.position = respawnPoint.transform.position;
             other.GetComponent<PlayerMovement>().movementSpeed = 200f;

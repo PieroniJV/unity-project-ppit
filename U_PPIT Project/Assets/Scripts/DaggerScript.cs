@@ -6,6 +6,7 @@ using UnityEngine;
 public class DaggerScript : MonoBehaviour
 {
     [SerializeField] private GameObject dagger;
+    
     public float daggerSpeed;
     private Rigidbody2D spawnedDaggerRb;
     private bool hasFired = false;

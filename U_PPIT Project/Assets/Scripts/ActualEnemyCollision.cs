@@ -21,7 +21,7 @@ public class ActualEnemyCollision : MonoBehaviour
             Destroy(transform.parent.gameObject);
         }
 
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("PlayerCollider"))
         {
             other.transform.position = respawnPoint.transform.position;
             other.GetComponent<PlayerMovement>().movementSpeed = 200f;

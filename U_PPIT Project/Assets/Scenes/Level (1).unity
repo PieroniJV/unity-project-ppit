@@ -2882,6 +2882,14 @@ PrefabInstance:
       propertyPath: daggerSpeed
       value: 400
       objectReference: {fileID: 0}
+    - target: {fileID: 2103057732, guid: ed9929a8a267d8f4ca68e9673e8f75b7, type: 3}
+      propertyPath: m_SortingLayer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2103057732, guid: ed9929a8a267d8f4ca68e9673e8f75b7, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 368641737497876051, guid: ed9929a8a267d8f4ca68e9673e8f75b7, type: 3}
       propertyPath: thingToPointTo
       value: 
@@ -2932,6 +2940,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 368641738246499373, guid: ed9929a8a267d8f4ca68e9673e8f75b7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 368641738930153990, guid: ed9929a8a267d8f4ca68e9673e8f75b7, type: 3}
+      propertyPath: m_SortingLayer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 368641738930153990, guid: ed9929a8a267d8f4ca68e9673e8f75b7, type: 3}
+      propertyPath: m_SortingLayerID
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

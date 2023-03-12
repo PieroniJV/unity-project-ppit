@@ -38,4 +38,15 @@ public class PlayerMovement : MonoBehaviour
         Vector2 directionOfMovement = new Vector2(movement.x, movement.y);
         rb2D.velocity = directionOfMovement * (movementSpeed * Time.fixedDeltaTime);
     }
+    
+    //REFERENCES//
+    /***************************************************************************************
+    *    Title: How to make 2D Top Down Movement (Brackeys/Continued)(Unity Tutorial)
+    *    Author: JTA Games
+    *    Date: September 24, 2020
+    *    Code version: Unknown
+    *    Availability: https://www.youtube.com/watch?v=fRpoE4FfJf8&t=1s
+    *
+    ***************************************************************************************/
+    
 }
