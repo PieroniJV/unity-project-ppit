@@ -16,7 +16,10 @@ public class KnockbackScript : MonoBehaviour
             if (other.gameObject != null)
             {
                 print("Normal enemy has entered trigger");
-                StartCoroutine(Knockback_Coroutine(other));
+                if (gameObject != null)
+                {
+                    StartCoroutine(Knockback_Coroutine(other));
+                }
             }
         }
     }
