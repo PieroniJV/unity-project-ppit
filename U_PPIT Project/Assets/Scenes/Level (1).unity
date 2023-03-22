@@ -2904,7 +2904,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 368641738246499373, guid: ed9929a8a267d8f4ca68e9673e8f75b7, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4.28
+      value: 13.9
       objectReference: {fileID: 0}
     - target: {fileID: 368641738246499373, guid: ed9929a8a267d8f4ca68e9673e8f75b7, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2959,13 +2959,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 196255910}
     m_Modifications:
+    - target: {fileID: 2607887481010372833, guid: 657b77042ef95ff4cb0532e4fdfcaf71, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 3633397718099496867, guid: 657b77042ef95ff4cb0532e4fdfcaf71, type: 3}
+      propertyPath: m_text
+      value: Settings
+      objectReference: {fileID: 0}
     - target: {fileID: 5136953632285309147, guid: 657b77042ef95ff4cb0532e4fdfcaf71, type: 3}
       propertyPath: m_Name
       value: Pause Panel
       objectReference: {fileID: 0}
     - target: {fileID: 5136953632285309147, guid: 657b77042ef95ff4cb0532e4fdfcaf71, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5136953632285309148, guid: 657b77042ef95ff4cb0532e4fdfcaf71, type: 3}
       propertyPath: m_Pivot.x
@@ -3053,7 +3061,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5136953632285309149, guid: 657b77042ef95ff4cb0532e4fdfcaf71, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5136953632291732739, guid: 657b77042ef95ff4cb0532e4fdfcaf71, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -49
       objectReference: {fileID: 0}
     - target: {fileID: 5136953632291732740, guid: 657b77042ef95ff4cb0532e4fdfcaf71, type: 3}
       propertyPath: m_Colors.m_HighlightedColor.b
@@ -3106,6 +3118,10 @@ PrefabInstance:
     - target: {fileID: 5136953632809204262, guid: 657b77042ef95ff4cb0532e4fdfcaf71, type: 3}
       propertyPath: m_Colors.m_HighlightedColor.r
       value: 0.2530075
+      objectReference: {fileID: 0}
+    - target: {fileID: 5136953633085679244, guid: 657b77042ef95ff4cb0532e4fdfcaf71, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 62
       objectReference: {fileID: 0}
     - target: {fileID: 5136953633085679245, guid: 657b77042ef95ff4cb0532e4fdfcaf71, type: 3}
       propertyPath: m_Colors.m_HighlightedColor.b
@@ -3173,8 +3189,12 @@ PrefabInstance:
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7011347156109823724, guid: f133674ae3f063b489cf369eca8dbc66, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 39.365543
+      objectReference: {fileID: 0}
+    - target: {fileID: 7011347156109823724, guid: f133674ae3f063b489cf369eca8dbc66, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.01
+      value: 12.1766
       objectReference: {fileID: 0}
     - target: {fileID: 7011347156109823724, guid: f133674ae3f063b489cf369eca8dbc66, type: 3}
       propertyPath: m_LocalPosition.y

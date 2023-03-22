@@ -70,8 +70,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3751799210026470757}
-  - component: {fileID: 3751799210026470755}
   - component: {fileID: 3751799210026470756}
+  - component: {fileID: 1849883082}
   m_Layer: 0
   m_Name: Follow Radius
   m_TagString: Untagged
@@ -94,20 +94,6 @@ Transform:
   m_Father: {fileID: 7853128202983622106}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &3751799210026470755
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3751799210026470758}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 76c492aa91f87b548aeaadfa9922a26c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 9
-  enemyRb: {fileID: 7853128202983622104}
 --- !u!58 &3751799210026470756
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -124,6 +110,20 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 11.67795
+--- !u!114 &1849883082
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3751799210026470758}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76c492aa91f87b548aeaadfa9922a26c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 7
+  enemyRb: {fileID: 7853128202983622104}
 --- !u!1 &7853128202983622109
 GameObject:
   m_ObjectHideFlags: 0
@@ -232,7 +232,7 @@ Rigidbody2D:
   m_Interpolate: 2
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!114 &3751799208423063506
 MonoBehaviour:
   m_ObjectHideFlags: 0
