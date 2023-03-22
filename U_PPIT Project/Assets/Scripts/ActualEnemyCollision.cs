@@ -15,12 +15,13 @@ public class ActualEnemyCollision : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Projectile"))
+        if (other.CompareTag("Weapons/Dagger"))
         {
+            Destroy(other.gameObject);
             Destroy(transform.parent.gameObject);
         }
 
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("PlayerCollider"))
         {
             other.transform.position = respawnPoint.transform.position;
             other.GetComponent<PlayerMovement>().movementSpeed = 200f;

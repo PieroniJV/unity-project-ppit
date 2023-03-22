@@ -1,11 +1,9 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class MousePosition : MonoBehaviour
 {
     [SerializeField] private Transform thingToPointTo;
+    private GameObject player;
     public bool isInTrigger = true;
     
     private void OnTriggerExit2D(Collider2D other)
@@ -14,7 +12,6 @@ public class MousePosition : MonoBehaviour
         {
             thingToPointTo.GetComponent<SpriteRenderer>().color = Color.red;
             isInTrigger = false;
-            Debug.Log("Thing Exited Trigger");
         }
     }
 
@@ -24,7 +21,6 @@ public class MousePosition : MonoBehaviour
         {
             thingToPointTo.GetComponent<SpriteRenderer>().color = Color.white;
             isInTrigger = true;
-            Debug.Log("Thing is staying in Trigger");
         }
     }
     
