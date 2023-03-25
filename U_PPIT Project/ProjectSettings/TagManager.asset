@@ -14,6 +14,7 @@ TagManager:
   - Weapons/Dagger
   - PlayerCollider
   - Weapons/Maul
+  - ExitTrigger
   layers:
   - Default
   - TransparentFX

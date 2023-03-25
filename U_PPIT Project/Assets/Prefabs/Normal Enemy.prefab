@@ -74,6 +74,7 @@ GameObject:
   - component: {fileID: 1749827952}
   - component: {fileID: 1749827953}
   - component: {fileID: 1749827954}
+  - component: {fileID: 1459936796}
   m_Layer: 0
   m_Name: Enemy Collider
   m_TagString: Normal Enemy
@@ -124,6 +125,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29bc9483d554be4ea2d7737412cc99d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1459936796
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1749827951}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fa582c6f768490fa1011c79ffabd1b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  flashSpriteDelay: 0.3
+  weaponTag: Weapons/Maul
 --- !u!1 &6407210491868133202
 GameObject:
   m_ObjectHideFlags: 0
