@@ -13,6 +13,8 @@ TagManager:
   - Weapons/Sword
   - Weapons/Dagger
   - PlayerCollider
+  - Weapons/Maul
+  - ExitTrigger
   layers:
   - Default
   - TransparentFX
@@ -67,6 +69,9 @@ TagManager:
     locked: 0
   - name: Projectile/Weapons
     uniqueID: 383034433
+    locked: 0
+  - name: Weapons/Maul
+    uniqueID: 2632537075
     locked: 0
   - name: Effect
     uniqueID: 1759770199

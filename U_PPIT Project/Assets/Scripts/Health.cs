@@ -5,17 +5,23 @@ public class Health : MonoBehaviour
 {
     [SerializeField] private int maxHealth = 3;
     private int currentHealth;
-    
+
+    public int CurrentHealth
+    {
+        get => currentHealth;
+        set => currentHealth = value;
+    }
+
     private void Awake()
     {
-        currentHealth = maxHealth;
+        CurrentHealth = maxHealth;
     }
 
     public void TakeAwayHealth(int damageAmount)
     {
-        currentHealth -= damageAmount;
-        Debug.Log("Health is now " + currentHealth);
-        if (currentHealth <= 0)
+        CurrentHealth -= damageAmount;
+        Debug.Log("Health is now " + CurrentHealth);
+        if (CurrentHealth <= 0)
         {
             Destroy(gameObject);
             Debug.Log("Enemy is dead");

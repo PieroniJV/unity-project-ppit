@@ -28,6 +28,9 @@ public class NormalEnemyCollision : MonoBehaviour
         }else if (other.CompareTag("Weapons/Sword"))
         {
             enemyHealth.TakeAwayHealth(1);
+        }else if (other.CompareTag("Weapons/Maul"))
+        {
+            enemyHealth.TakeAwayHealth(1);
         }
     }
 }

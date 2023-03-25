@@ -7,7 +7,7 @@ public class NormalEnemyReactionScript : MonoBehaviour
     
     private void OnTriggerStay2D(Collider2D other)
     {
-        if (other.CompareTag("PlayerCollider"))
+        if (other.CompareTag("ExitTrigger"))
         {
            FollowPlayer(other);
         }
