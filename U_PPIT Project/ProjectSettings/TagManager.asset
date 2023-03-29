@@ -64,6 +64,9 @@ TagManager:
   - name: ExitTrigger
     uniqueID: 377276733
     locked: 0
+  - name: Weapons/Dagger
+    uniqueID: 2681949525
+    locked: 0
   - name: Player
     uniqueID: 645040409
     locked: 0
