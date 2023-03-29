@@ -67,6 +67,12 @@ TagManager:
   - name: Weapons/Dagger
     uniqueID: 2681949525
     locked: 0
+  - name: Chest
+    uniqueID: 3689112551
+    locked: 0
+  - name: Enemy
+    uniqueID: 1603329411
+    locked: 0
   - name: Player
     uniqueID: 645040409
     locked: 0
