@@ -23,8 +23,8 @@ public class SpriteFlashScript : MonoBehaviour
 
     IEnumerator FlashSprite_Coroutine()
     {
-        GetComponentInParent<SpriteRenderer>().color = Color.white;
-        yield return new WaitForSeconds(flashSpriteDelay);
         GetComponentInParent<SpriteRenderer>().color = Color.red;
+        yield return new WaitForSeconds(flashSpriteDelay);
+        GetComponentInParent<SpriteRenderer>().color = Color.white;
     } 
 }
