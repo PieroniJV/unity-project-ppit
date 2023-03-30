@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -7,6 +8,23 @@ using UnityEngine.SceneManagement;
 public class SceneController : MonoBehaviour
 {
     [SerializeField] string levelName;
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            QuitGame();
+        }
+
+        if (Input.GetKeyDown(KeyCode.Tab))
+        {
+            // Get the current scene
+            Scene currentScene = SceneManager.GetActiveScene();
+
+            // Reload the current scene
+            SceneManager.LoadScene(currentScene.name);
+        }
+    }
 
     // The next scene in the Scenes in build list is loaded
     public void PlayGame()
