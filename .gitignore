@@ -60,3 +60,7 @@ crashlytics-build.properties
 Icon?
 ehthumbs.db
 Thumbs.db
+*.meta
+*.meta
+*.meta
+*.meta
