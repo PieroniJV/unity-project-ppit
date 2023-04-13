@@ -10,7 +10,7 @@ public class NormalEnemyReactionScript : MonoBehaviour
 
     private void OnTriggerStay2D(Collider2D other)
     {
-        if (other.CompareTag("PlayerCollider"))
+        if (other.CompareTag("ExitTrigger"))
         {
             FollowPlayer(other);
         }
@@ -18,7 +18,7 @@ public class NormalEnemyReactionScript : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D other)
     {
-        if (other.CompareTag("PlayerCollider") && enemyAnimator != null)
+        if (other.CompareTag("ExitTrigger") && enemyAnimator != null)
         {
             enemyAnimator.speed = 0.3f;
             enemyAnimator.SetBool("isRunning", false);

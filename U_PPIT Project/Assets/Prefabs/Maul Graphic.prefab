@@ -47,6 +47,7 @@ GameObject:
   - component: {fileID: 5092757053801551463}
   - component: {fileID: 5092757053801551461}
   - component: {fileID: 5092757053801551460}
+  - component: {fileID: 7960383639690048557}
   m_Layer: 0
   m_Name: Spike Ball
   m_TagString: Weapons/Maul
@@ -169,6 +170,21 @@ MonoBehaviour:
   effectToSpawn: {fileID: 1857345312582513292, guid: 59a57b3cc0e3ab845b7465aef2b3e7f5, type: 3}
   timeToDestroyEffect: 3
   objectThatWasHit: Normal Enemy
+--- !u!114 &7960383639690048557
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5092757053801551456}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8503df885aada9443a68b7268f5a32a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  effectToSpawn: {fileID: 1857345312582513292, guid: 1c5200b899fab474e970880eb6f06081, type: 3}
+  timeToDestroyEffect: 3
+  objectThatWasHit: SmallEnemy
 --- !u!1 &5092757054051833254
 GameObject:
   m_ObjectHideFlags: 0

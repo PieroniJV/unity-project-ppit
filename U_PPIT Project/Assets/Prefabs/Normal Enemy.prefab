@@ -153,7 +153,8 @@ GameObject:
   - component: {fileID: 6407210491868133207}
   - component: {fileID: 1679920477}
   - component: {fileID: 441546788}
-  m_Layer: 0
+  - component: {fileID: 1973081725}
+  m_Layer: 8
   m_Name: Normal Enemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -249,7 +250,7 @@ Rigidbody2D:
   m_Interpolate: 2
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!114 &1679920477
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -283,3 +284,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!70 &1973081725
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6407210491868133202}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.00000019426795, y: -0.059918456}
+  m_Size: {x: 1.2, y: 2.0280352}
+  m_Direction: 0
