@@ -10622,7 +10622,7 @@ TextureImporter:
         x: 529
         y: 232
         width: 32
-        height: 98
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -10662,9 +10662,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 595
-        y: 232
+        y: 298
         width: 32
-        height: 98
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -11102,7 +11102,7 @@ TextureImporter:
       name: 32x32_map_tile v3.1_523
       rect:
         serializedVersion: 2
-        x: 562
+        x: 529
         y: 265
         width: 32
         height: 32
@@ -11123,7 +11123,7 @@ TextureImporter:
       name: 32x32_map_tile v3.1_524
       rect:
         serializedVersion: 2
-        x: 628
+        x: 595
         y: 265
         width: 32
         height: 32
@@ -11564,12 +11564,12 @@ TextureImporter:
       name: 32x32_map_tile v3.1_545
       rect:
         serializedVersion: 2
-        x: 628
-        y: 232
+        x: 529
+        y: 298
         width: 32
         height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.49999905}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -11585,7 +11585,7 @@ TextureImporter:
       name: 32x32_map_tile v3.1_546
       rect:
         serializedVersion: 2
-        x: 661
+        x: 595
         y: 232
         width: 32
         height: 32
@@ -15025,19 +15025,19 @@ TextureImporter:
       32x32_map_tile v3.1_315: 1803294326
       32x32_map_tile v3.1_672: 239376585
       32x32_map_tile v3.1_91: -1571084571
-      32x32_map_tile v3.1_614: 1687859785
+      32x32_map_tile v3.1_304: -134741809
       32x32_map_tile v3.1_128: 1818032698
+      32x32_map_tile v3.1_614: 1687859785
       32x32_map_tile v3.1_576: 1524674096
       32x32_map_tile v3.1_216: 1020211018
-      32x32_map_tile v3.1_510: -455193208
       32x32_map_tile v3.1_163: 1599799523
       32x32_map_tile v3.1_378: 337478756
       32x32_map_tile v3.1_435: -281884456
       32x32_map_tile v3.1_488: -1268642080
       32x32_map_tile v3.1_32: -1977603005
       32x32_map_tile v3.1_187: -835140102
-      32x32_map_tile v3.1_304: -134741809
       32x32_map_tile v3.1_690: 1793032605
+      32x32_map_tile v3.1_510: -455193208
       32x32_map_tile v3.1_151: -948318206
       32x32_map_tile v3.1_60: -485904356
       32x32_map_tile v3.1_518: 968517574
