@@ -75,7 +75,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1613017771
-  m_SortingLayer: 5
+  m_SortingLayer: 7
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 9387fbd21bbc6054e9f4a30a94e442df, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -152,6 +152,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8503df885aada9443a68b7268f5a32a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  effectToSpawn: {fileID: 1857345312582513292, guid: 1c5200b899fab474e970880eb6f06081, type: 3}
+  effectToSpawn: {fileID: 1857345312582513292, guid: bdea8bea0410db24aaf02f989a79572e, type: 3}
   timeToDestroyEffect: 3
   objectThatWasHit: SmallEnemy
