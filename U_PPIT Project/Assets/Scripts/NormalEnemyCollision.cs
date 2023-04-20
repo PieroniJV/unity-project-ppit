@@ -3,11 +3,11 @@ using UnityEngine;
 public class NormalEnemyCollision : MonoBehaviour
 {
     private GameObject respawnPoint;
-    private Health enemyHealth;
+    private EnemyHealth enemyHealth;
     
     private void Awake()
     {
-        enemyHealth = GetComponentInParent<Health>();
+        enemyHealth = GetComponentInParent<EnemyHealth>();
         respawnPoint = GameObject.Find("RespawnPoint");
     }
 

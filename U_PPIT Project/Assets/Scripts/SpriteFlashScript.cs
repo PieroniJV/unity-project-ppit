@@ -6,16 +6,16 @@ public class SpriteFlashScript : MonoBehaviour
 {
     [SerializeField] private float flashSpriteDelay = 2f;
     [SerializeField] private string weaponTag = "";
-    private Health spriteHealth;
+    private EnemyHealth spriteEnemyHealth;
 
     private void Awake()
     {
-        spriteHealth = GetComponentInParent<Health>();
+        spriteEnemyHealth = GetComponentInParent<EnemyHealth>();
     }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag(weaponTag) && spriteHealth.CurrentHealth > 0)
+        if (other.CompareTag(weaponTag) && spriteEnemyHealth.CurrentHealth > 0)
         {
             StartCoroutine(FlashSprite_Coroutine());
         }

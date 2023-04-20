@@ -1,8 +1,9 @@
 using System;
 using UnityEngine;
 
-public class Health : MonoBehaviour
+public class EnemyHealth : MonoBehaviour
 {
+    [SerializeField] private ScoreScript scoreScript;
     [SerializeField] private int maxHealth = 3;
     private int currentHealth;
 
@@ -23,8 +24,8 @@ public class Health : MonoBehaviour
         Debug.Log("Health is now " + CurrentHealth);
         if (CurrentHealth <= 0)
         {
+            scoreScript.AddToKillCount();
             Destroy(gameObject);
-            Debug.Log("Enemy is dead");
         }
     }
     
