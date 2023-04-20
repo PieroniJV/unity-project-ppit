@@ -1,10 +1,8 @@
 using System;
-using System.Net.Mime;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-[RequireComponent(typeof(Image))]
 public class ChestScript : MonoBehaviour
 {
     private Animator chestAnimator;
@@ -14,11 +12,15 @@ public class ChestScript : MonoBehaviour
     [SerializeField] private Sprite giftSprite;
     [SerializeField] private String giftName;
     [SerializeField] private float imageWidth = 0f;
+    [SerializeField] private PlayerInventory playerInventory;
+    
     
     private Image giftImage;
+    private BoxCollider2D chestCollider;
     
     private void Awake()
     {
+        chestCollider = GetComponent<BoxCollider2D>();
         giftImage = giftImageGO.GetComponent<Image>();
         chestAnimator = GetComponent<Animator>();
     }
@@ -28,6 +30,7 @@ public class ChestScript : MonoBehaviour
         if (other.CompareTag("PlayerCollider"))
         {
             DisplayGift();
+            playerInventory.IncreaseNumberOfGifts();
             chestAnimator.SetBool("isOpen", true);
             panel.SetBool("hasOpenedPanel", true);
         }
@@ -37,11 +40,10 @@ public class ChestScript : MonoBehaviour
     {
         if (other.CompareTag("PlayerCollider"))
         {
-            chestAnimator.SetBool("isOpen", false);
             panel.SetBool("hasOpenedPanel", false);
+            chestCollider.enabled = false;
         }
     }
-
 
     //The code from the method below was modified from code found on Unity Answers, link to reference is at the bottom of this script
     private void DisplayGift()
@@ -51,6 +53,12 @@ public class ChestScript : MonoBehaviour
         giftImage.sprite = giftSprite;
         giftText.text = giftName;
     }
+
+    public Sprite GetGiftSprite()
+    {
+        return giftImage.sprite;
+    }
+    
 }
 
 //REFERENCES// 
