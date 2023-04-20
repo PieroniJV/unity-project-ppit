@@ -31,9 +31,13 @@ public class PlayerInventory : MonoBehaviour
         print("Number of gifts is now " + numberOfGifts);
     }
 
+    public int GetNumberOfGifts()
+    {
+        return numberOfGifts;
+    }
+
     private void DisplaySpriteInInventory()
     {
-        print(goldSkullImage);
         var currentGiftSprite = chestScript.GetGiftSprite();
         if (currentGiftSprite == goldSkullImage.sprite)
         {
