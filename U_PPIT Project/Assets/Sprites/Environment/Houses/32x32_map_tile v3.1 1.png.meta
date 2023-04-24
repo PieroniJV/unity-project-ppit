@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 32
+  spritePixelsToUnits: 30
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -90,6 +90,42 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -15013,18 +15049,18 @@ TextureImporter:
       32x32_map_tile v3.1_315: -307629016
       32x32_map_tile v3.1_672: -1547851009
       32x32_map_tile v3.1_91: 524075368
-      32x32_map_tile v3.1_614: 2113392280
+      32x32_map_tile v3.1_304: 208568141
       32x32_map_tile v3.1_128: -1217299945
       32x32_map_tile v3.1_576: 1499737027
       32x32_map_tile v3.1_216: -680977269
       32x32_map_tile v3.1_510: -2138753568
-      32x32_map_tile v3.1_304: 208568141
       32x32_map_tile v3.1_163: -994908918
-      32x32_map_tile v3.1_435: 2038125083
       32x32_map_tile v3.1_378: 1681558491
+      32x32_map_tile v3.1_435: 2038125083
       32x32_map_tile v3.1_488: 64514773
       32x32_map_tile v3.1_32: 444518446
       32x32_map_tile v3.1_187: 1579593929
+      32x32_map_tile v3.1_614: 2113392280
       32x32_map_tile v3.1_690: 1334425493
       32x32_map_tile v3.1_151: 575290464
       32x32_map_tile v3.1_60: 561119976
