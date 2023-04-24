@@ -19,6 +19,7 @@ public class TimerScript : MonoBehaviour
         DisplayTime(timeValue);
     }
 
+    //Method below was gotten from Game Dev Begginer's video - reference is at the bottom of this script
     private void DisplayTime(float timeToDisplay)
     {
         float minutes = Mathf.FloorToInt(timeToDisplay / 60);
@@ -29,3 +30,12 @@ public class TimerScript : MonoBehaviour
 
     }
 }
+
+//REFERENCES// 
+/***************************************************************************************
+*    Title: How to make a Countdown Timer in Unity (in minutes + seconds)
+*    Author: Game Dev Beginner
+*    Date: Apr 13, 2021
+*    Availability: https://www.youtube.com/watch?v=HmHPJL-OcQE
+*
+***************************************************************************************/
