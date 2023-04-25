@@ -12,8 +12,12 @@ public class Database : MonoBehaviour
     private IDataReader reader;
     private string dbName = "myDatabase.db";
     private string tableName = "game_stats";
-
     private TMP_Text textMeshPro;
+
+    // Fields to retrieve player's info    
+    [SerializeField] private string playerName;
+    [SerializeField] private TextMeshProUGUI playerScore;
+    [SerializeField] private TextMeshProUGUI playerTime;
 
     private void Start()
     {
@@ -68,6 +72,11 @@ public class Database : MonoBehaviour
         reader = null;
         command.Dispose();
         command = null;
+    }
+
+    private void GetInfo()
+    {
+
     }
 
     private void InsertData()
