@@ -65,6 +65,9 @@ TagManager:
   - name: Fences
     uniqueID: 1282443673
     locked: 0
+  - name: TreeStumps
+    uniqueID: 2408983111
+    locked: 0
   - name: Trees
     uniqueID: 1198321567
     locked: 0

@@ -4,14 +4,14 @@ using UnityEngine.UI;
 
 public class ReadInputScript : MonoBehaviour
 {
-    [SerializeField] private string theName;
+    private string theName;
     [SerializeField] private GameObject inputField;
     [SerializeField] private GameObject textDisplay;
 
     public void StoreName()
     {
         theName = inputField.GetComponent<TextMeshProUGUI>().text;
-        textDisplay.GetComponent<TextMeshProUGUI>().text = "Welcome " + theName;
+        print(theName);
     }
 }
 //REFERENCES// 

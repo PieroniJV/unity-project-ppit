@@ -25,13 +25,7 @@ public class SceneController : MonoBehaviour
             SceneManager.LoadScene(currentScene.name);
         }
     }
-
-    // The next scene in the Scenes in build list is loaded
-    public void PlayGame()
-    {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-    }
-
+    
     // Exit only actually happens when playing a build version of the game
     public void QuitGame()
     {
@@ -45,8 +39,14 @@ public class SceneController : MonoBehaviour
 
     public void LoadNextLevel()
     {
-        // To be implemented
-        // When player completes level this moves player to the next level/completion level scene
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
 }
+//REFERENCES// 
+/***************************************************************************************
+*    Title: How to load next scene when pressed a button while playing in unity
+*    Asked By: Davian Vivian
+*    Date Asked: Dec 2, 2021
+*    Availability: https://stackoverflow.com/questions/70196826/how-to-load-next-scene-when-pressed-a-button-while-playing-in-unity
+***************************************************************************************/
