@@ -27,7 +27,7 @@ TagManager:
   - SmallEnemy
   - NormalEnemy
   - PlayerFeet
-  - 
+  - ExteriorDesign
   - 
   - 
   - 
@@ -55,6 +55,9 @@ TagManager:
     locked: 0
   - name: Background
     uniqueID: 1852982903
+    locked: 0
+  - name: ExteriorDesign
+    uniqueID: 702214167
     locked: 0
   - name: Houses
     uniqueID: 4240117541
