@@ -2,22 +2,17 @@ using UnityEngine;
 
 public class ScoreScript : MonoBehaviour
 {
-    private int numberOfEnemiesKilled;
+    public static int numberOfEnemiesKilled;
+    
 
-    public int NumberOfEnemiesKilled
+    private void Awake()
     {
-        get => numberOfEnemiesKilled;
-        set => numberOfEnemiesKilled = value;
-    }
-
-    private void Start()
-    {
-        NumberOfEnemiesKilled = 0;
+        numberOfEnemiesKilled = 0;
     }
 
     public void AddToKillCount()
     {
-        NumberOfEnemiesKilled++;
-        Debug.Log("Number of enemies killed is " + NumberOfEnemiesKilled);
+        numberOfEnemiesKilled++;
+        Debug.Log("Number of enemies killed is " + numberOfEnemiesKilled);
     }
 }
