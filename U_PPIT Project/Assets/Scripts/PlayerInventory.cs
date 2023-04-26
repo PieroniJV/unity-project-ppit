@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -24,6 +25,24 @@ public class PlayerInventory : MonoBehaviour
         meatImage = meatGO.GetComponent<Image>();
     }
 
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.P))
+        {
+           EarnAllGifts();
+           print("All gifts have been earned");
+        }
+    }
+
+    private void EarnAllGifts()
+    {
+        numberOfGifts = 4;
+        goldSkullGO.GetComponent<Image>().color = Color.white;
+        breadGO.GetComponent<Image>().color = Color.white;
+        fishGO.GetComponent<Image>().color = Color.white;
+        meatGO.GetComponent<Image>().color = Color.white;
+    }
+    
     public void IncreaseNumberOfGifts()
     {
         numberOfGifts++;

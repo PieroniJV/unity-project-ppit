@@ -6,17 +6,27 @@ public class TimerScript : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI timerText;
     private float timeValue = 0;
-
+    private bool hasStoppedTime;
+    
     public TextMeshProUGUI TimerText
     {
         get => timerText;
         set => timerText = value;
     }
 
+    public bool HasStoppedTime
+    {
+        get => hasStoppedTime;
+        set => hasStoppedTime = value;
+    }
+
     private void Update()
     {
-        timeValue += Time.deltaTime;
-        DisplayTime(timeValue);
+        if (!HasStoppedTime)
+        {
+            timeValue += Time.deltaTime;
+            DisplayTime(timeValue);
+        }
     }
 
     //Method below was gotten from Game Dev Begginer's video - reference is at the bottom of this script
@@ -29,6 +39,8 @@ public class TimerScript : MonoBehaviour
         TimerText.text = string.Format("{0:00}:{1:00}:{2:000}", minutes, seconds, milliseconds);
 
     }
+
+   
 }
 
 //REFERENCES// 

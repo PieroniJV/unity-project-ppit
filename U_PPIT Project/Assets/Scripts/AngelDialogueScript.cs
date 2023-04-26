@@ -5,10 +5,14 @@ using UnityEngine;
 using TMPro;
 using Unity.VisualScripting;
 
-public class DialogueScript : MonoBehaviour
+public class AngelDialogueScript : MonoBehaviour
 {
     [SerializeField] private PlayerInventory playerInventory;
     [SerializeField] private Animator flashToWhiteAnimator;
+    [SerializeField] private AngelStatueScript angelStatueScript;
+    [SerializeField] private TimerScript timerScript;
+    [SerializeField] private SpinAround spinAround;
+    [SerializeField] private DaggerScript daggerScript;
     
     
     [SerializeField] private TextMeshProUGUI textComponent;
@@ -40,9 +44,11 @@ public class DialogueScript : MonoBehaviour
     {
         if (hasStartedDialogue)
         {
+            spinAround.enabled = false;
+            daggerScript.enabled = false;
+            timerScript.HasStoppedTime = true;
             RunThroughDialogue();
         }
-       
     }
 
     private void RunThroughDialogue()
@@ -97,6 +103,13 @@ public class DialogueScript : MonoBehaviour
             if (hasWonGame)
             {
                 flashToWhiteAnimator.SetBool("hasWonGame", hasWonGame);
+            }
+            else
+            {
+                angelStatueScript.MovePlayerAgain();
+                timerScript.HasStoppedTime = false;
+                spinAround.enabled = true;
+                daggerScript.enabled = true;
             }
             gameObject.SetActive(false);
         }

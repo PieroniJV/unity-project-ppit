@@ -32,7 +32,7 @@ RectTransform:
   m_Children:
   - {fileID: 407828905873476513}
   m_Father: {fileID: 5865575639736005334}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -169,6 +169,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerInventory: {fileID: 0}
   flashToWhiteAnimator: {fileID: 5865575640907737686}
+  angelStatueScript: {fileID: 0}
+  timerScript: {fileID: 0}
   textComponent: {fileID: 5865575639626192817}
   lines:
   - Greetings Traveller.
@@ -427,8 +429,8 @@ RectTransform:
   - {fileID: 5865575639897727711}
   - {fileID: 5865575640479444738}
   - {fileID: 5865575639402446465}
-  - {fileID: 5865575640907737687}
   - {fileID: 675193061243126729}
+  - {fileID: 5865575640907737687}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1034,7 +1036,7 @@ RectTransform:
   m_Children:
   - {fileID: 5865575641216775918}
   m_Father: {fileID: 5865575639736005334}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
