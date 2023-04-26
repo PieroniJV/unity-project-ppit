@@ -1,7 +1,3 @@
-using System;
-using System.Collections;
-using TMPro;
-using UnityEditor.Searcher;
 using UnityEngine;
 
 public class AngelStatueScript : MonoBehaviour
