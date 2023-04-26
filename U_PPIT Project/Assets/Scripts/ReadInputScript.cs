@@ -8,11 +8,18 @@ public class ReadInputScript : MonoBehaviour
     [SerializeField] private GameObject inputField;
     [SerializeField] private GameObject textDisplay;
 
+    public string TheName
+    {
+        get => theName;
+        set => theName = value;
+    }
+
     public void StoreName()
     {
-        theName = inputField.GetComponent<TextMeshProUGUI>().text;
-        print(theName);
+        TheName = inputField.GetComponent<TextMeshProUGUI>().text;
+        print(TheName);
     }
+    
 }
 //REFERENCES// 
 /***************************************************************************************

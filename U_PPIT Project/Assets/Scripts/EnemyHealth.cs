@@ -3,10 +3,10 @@ using UnityEngine;
 
 public class EnemyHealth : MonoBehaviour
 {
-    [SerializeField] private ScoreScript scoreScript;
+    private ScoreScript scoreScript;
     [SerializeField] private int maxHealth = 3;
     private int currentHealth;
-
+    
     public int CurrentHealth
     {
         get => currentHealth;
@@ -16,6 +16,7 @@ public class EnemyHealth : MonoBehaviour
     private void Awake()
     {
         CurrentHealth = maxHealth;
+        scoreScript = GameObject.Find("ScoreObject").GetComponent<ScoreScript>();
     }
 
     public void TakeAwayHealth(int damageAmount)

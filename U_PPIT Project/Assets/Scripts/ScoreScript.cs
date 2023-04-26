@@ -4,14 +4,20 @@ public class ScoreScript : MonoBehaviour
 {
     private int numberOfEnemiesKilled;
 
+    public int NumberOfEnemiesKilled
+    {
+        get => numberOfEnemiesKilled;
+        set => numberOfEnemiesKilled = value;
+    }
+
     private void Start()
     {
-        numberOfEnemiesKilled = 0;
+        NumberOfEnemiesKilled = 0;
     }
 
     public void AddToKillCount()
     {
-        numberOfEnemiesKilled++;
-        Debug.Log("Number of enemies killed is " + numberOfEnemiesKilled);
+        NumberOfEnemiesKilled++;
+        Debug.Log("Number of enemies killed is " + NumberOfEnemiesKilled);
     }
 }
