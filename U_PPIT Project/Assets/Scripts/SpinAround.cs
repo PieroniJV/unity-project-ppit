@@ -50,11 +50,6 @@ public class SpinAround : MonoBehaviour
     {
         // Set the weapon's local rotation back to the initial rotation
         transform.localRotation = initialRotation;
-
-        // // Optional: Set the weapon's position to the top of the player
-        // Vector3 playerPosition = player.transform.position;
-        // Vector3 weaponOffset = new Vector3(0, 1, 0); // Adjust this value as needed
-        // transform.position = playerPosition + weaponOffset;
     }
     
 }
