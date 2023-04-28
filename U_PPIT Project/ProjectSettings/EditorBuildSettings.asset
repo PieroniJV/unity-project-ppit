@@ -21,6 +21,9 @@ EditorBuildSettings:
     path: Assets/Scenes/IntroScene.unity
     guid: b0c0f3205fae0124aaa3d341751b65d2
   - enabled: 1
+    path: Assets/Scenes/Controls.unity
+    guid: 78348cc95eacd234eab73a1a5c24d07c
+  - enabled: 1
     path: Assets/Scenes/MainLevel.unity
     guid: 82e205bf3ab3c9a49a06e8ae482c9430
   - enabled: 1
