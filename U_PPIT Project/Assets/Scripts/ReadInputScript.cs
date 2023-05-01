@@ -1,18 +1,19 @@
 using TMPro;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class ReadInputScript : MonoBehaviour
 {
-    [SerializeField] private string theName;
+    public static string playerName = "Guest";
     [SerializeField] private GameObject inputField;
     [SerializeField] private GameObject textDisplay;
 
+    
     public void StoreName()
     {
-        theName = inputField.GetComponent<TextMeshProUGUI>().text;
-        textDisplay.GetComponent<TextMeshProUGUI>().text = "Welcome " + theName;
+        playerName = inputField.GetComponent<TextMeshProUGUI>().text;
+        print(playerName);
     }
+    
 }
 //REFERENCES// 
 /***************************************************************************************

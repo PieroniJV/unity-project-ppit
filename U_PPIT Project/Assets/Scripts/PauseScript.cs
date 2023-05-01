@@ -16,6 +16,7 @@ public class PauseScript : MonoBehaviour
         player = GameObject.Find("Player");
         projectileGO = GameObject.Find("Projectile");
         playerMovement = player.GetComponent<PlayerMovement>();
+        pausePanel.SetActive(false);
     }
 
     private void Update()

@@ -5,18 +5,27 @@ using UnityEngine.UIElements;
 public class TimerScript : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI timerText;
+    public static string finalTime = "0:00";
     private float timeValue = 0;
-
-    public TextMeshProUGUI TimerText
+    private bool hasStoppedTime;
+    
+    public bool HasStoppedTime
     {
-        get => timerText;
-        set => timerText = value;
+        get => hasStoppedTime;
+        set => hasStoppedTime = value;
     }
 
     private void Update()
     {
-        timeValue += Time.deltaTime;
-        DisplayTime(timeValue);
+        if (!HasStoppedTime)
+        {
+            timeValue += Time.deltaTime;
+            DisplayTime(timeValue);
+        }
+        else
+        {
+            finalTime = timerText.text;
+        }
     }
 
     //Method below was gotten from Game Dev Begginer's video - reference is at the bottom of this script
@@ -24,11 +33,13 @@ public class TimerScript : MonoBehaviour
     {
         float minutes = Mathf.FloorToInt(timeToDisplay / 60);
         float seconds = Mathf.FloorToInt(timeToDisplay % 60);
-        float milliseconds = timeToDisplay % 1 * 1000;
+
         
-        TimerText.text = string.Format("{0:00}:{1:00}:{2:000}", minutes, seconds, milliseconds);
+        timerText.text = string.Format("{0:00}:{1:00}", minutes, seconds);
 
     }
+
+   
 }
 
 //REFERENCES// 

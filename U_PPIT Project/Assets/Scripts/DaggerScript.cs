@@ -1,3 +1,5 @@
+using System;
+using TMPro;
 using UnityEngine;
 
 public class DaggerScript : MonoBehaviour
@@ -7,16 +9,42 @@ public class DaggerScript : MonoBehaviour
     public float daggerSpeed;
     private Rigidbody2D spawnedDaggerRb;
     private bool hasFired = false;
-    [SerializeField] private GameObject directionHelper;
+    private static int numberOfDaggers;
     
+    [SerializeField] private GameObject directionHelper;
+    [SerializeField] private TextMeshProUGUI daggerAmntText;
+    
+    private void Awake()
+    {
+        numberOfDaggers = 5;
+        daggerAmntText.text = numberOfDaggers.ToString();
+    }
+
     //Update is used for input from player
     private void Update()
     {
+        daggerAmntText.text = numberOfDaggers.ToString();
         RotateDirectionHelper();
-        if (Input.GetKeyDown(KeyCode.F))
+        if (Input.GetKeyDown(KeyCode.F) && numberOfDaggers > 0)
         {
+            TakeAwayDagger();
             hasFired = true;
         }
+    }
+
+    public static void AddDagger()
+    {
+        if (numberOfDaggers < 5)
+        {
+            numberOfDaggers++;
+            print(numberOfDaggers);
+        }
+    }
+
+    private void TakeAwayDagger()
+    {
+        numberOfDaggers--;
+        print(numberOfDaggers);
     }
 
     private void RotateDirectionHelper()

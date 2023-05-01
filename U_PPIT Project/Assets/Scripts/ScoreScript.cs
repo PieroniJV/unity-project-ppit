@@ -2,9 +2,10 @@ using UnityEngine;
 
 public class ScoreScript : MonoBehaviour
 {
-    private int numberOfEnemiesKilled;
+    public static int numberOfEnemiesKilled;
+    
 
-    private void Start()
+    private void Awake()
     {
         numberOfEnemiesKilled = 0;
     }

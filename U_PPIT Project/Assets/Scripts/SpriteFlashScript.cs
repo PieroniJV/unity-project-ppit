@@ -6,6 +6,7 @@ public class SpriteFlashScript : MonoBehaviour
 {
     [SerializeField] private float flashSpriteDelay = 2f;
     [SerializeField] private string weaponTag = "";
+    [SerializeField] private Color defaultEnemyColor;
     private EnemyHealth spriteEnemyHealth;
 
     private void Awake()
@@ -23,8 +24,9 @@ public class SpriteFlashScript : MonoBehaviour
 
     IEnumerator FlashSprite_Coroutine()
     {
-        GetComponentInParent<SpriteRenderer>().color = Color.red;
+        var enemySprite = GetComponentInParent<SpriteRenderer>();
+        enemySprite.color = Color.red;
         yield return new WaitForSeconds(flashSpriteDelay);
-        GetComponentInParent<SpriteRenderer>().color = Color.white;
+        enemySprite.color = defaultEnemyColor;
     } 
 }
