@@ -13,13 +13,15 @@ public class ChestScript : MonoBehaviour
     [SerializeField] private String giftName;
     [SerializeField] private float imageWidth = 0f;
     [SerializeField] private PlayerInventory playerInventory;
-    
+    [SerializeField] private AudioClip chestOpenSound;
+    private AudioSource soundManager;
     
     private Image giftImage;
     private BoxCollider2D chestCollider;
     
     private void Awake()
     {
+        soundManager = GameObject.Find("SoundManager").GetComponent<AudioSource>();
         chestCollider = GetComponent<BoxCollider2D>();
         giftImage = giftImageGO.GetComponent<Image>();
         chestAnimator = GetComponent<Animator>();
@@ -29,6 +31,7 @@ public class ChestScript : MonoBehaviour
     {
         if (other.CompareTag("PlayerCollider"))
         {
+            soundManager.PlayOneShot(chestOpenSound);
             DisplayGift();
             playerInventory.IncreaseNumberOfGifts();
             chestAnimator.SetBool("isOpen", true);

@@ -13,9 +13,12 @@ public class DaggerScript : MonoBehaviour
     
     [SerializeField] private GameObject directionHelper;
     [SerializeField] private TextMeshProUGUI daggerAmntText;
-    
+    [SerializeField] private AudioClip daggerSound;
+    private AudioSource soundManager;
+
     private void Awake()
     {
+        soundManager = GameObject.Find("SoundManager").GetComponent<AudioSource>();
         numberOfDaggers = 5;
         daggerAmntText.text = numberOfDaggers.ToString();
     }
@@ -27,6 +30,7 @@ public class DaggerScript : MonoBehaviour
         RotateDirectionHelper();
         if (Input.GetKeyDown(KeyCode.F) && numberOfDaggers > 0)
         {
+            soundManager.PlayOneShot(daggerSound);
             TakeAwayDagger();
             hasFired = true;
         }
