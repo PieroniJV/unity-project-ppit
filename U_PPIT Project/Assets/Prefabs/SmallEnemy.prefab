@@ -72,6 +72,7 @@ GameObject:
   - component: {fileID: 3751799210026470757}
   - component: {fileID: 3751799210026470756}
   - component: {fileID: 1849883082}
+  - component: {fileID: 7979649904660171549}
   m_Layer: 0
   m_Name: Follow Radius
   m_TagString: Untagged
@@ -125,6 +126,19 @@ MonoBehaviour:
   speed: 9
   enemyRb: {fileID: 7853128202983622104}
   enemyAnimator: {fileID: 1712340319}
+--- !u!114 &7979649904660171549
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3751799210026470758}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 292abecd5db6a5544a85b78aeb22953d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  zombieAlertSound: {fileID: 8300000, guid: cbf48b0e20ee17044b7918e69ba7553a, type: 3}
 --- !u!1 &7853128202983622109
 GameObject:
   m_ObjectHideFlags: 0
@@ -202,7 +216,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1603329411
-  m_SortingLayer: 12
+  m_SortingLayer: 13
   m_SortingOrder: 9
   m_Sprite: {fileID: 487157423, guid: a3fdc6e1199048142b2659aa13f68c7a, type: 3}
   m_Color: {r: 1, g: 0.06486148, b: 0, a: 1}
@@ -248,7 +262,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1fc48723f91a6004cb672be4982b2f62, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreScript: {fileID: 0}
   maxHealth: 1
 --- !u!95 &1712340319
 Animator:

@@ -18,13 +18,24 @@ public class AngelDialogueScript : MonoBehaviour
     [SerializeField] private TextMeshProUGUI textComponent;
     [SerializeField] private string[] lines;
     [SerializeField] private float textSpeed;
+    
+    [SerializeField] private AudioSource audioSource;
+    [SerializeField] private AudioClip letterSound;
+    
     private int index;
     private bool hasStartedDialogue = false;
     private bool hasWonGame = false;
-
+    private AudioSource musicManager;
+    
     public bool HasStartedDialogue
     {
         set => hasStartedDialogue = value;
+    }
+
+    private void Awake()
+    {
+        musicManager = GameObject.Find("SoundManager").GetComponent<AudioSource>();
+        musicManager.Play();
     }
 
     private void Start()
@@ -53,7 +64,10 @@ public class AngelDialogueScript : MonoBehaviour
 
     private void RunThroughDialogue()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0) 
+            || Input.GetKeyDown(KeyCode.E) 
+            || Input.GetKeyDown(KeyCode.Return)
+            || Input.GetKeyDown(KeyCode.Space))
         {
             if (textComponent.text == lines[index])
             {
@@ -62,6 +76,10 @@ public class AngelDialogueScript : MonoBehaviour
                 {
                     if (playerInventory.GetNumberOfGifts() >= 4)
                     {
+                        if (musicManager != null)
+                        {
+                            musicManager.Stop();
+                        }
                         lines[index + 1] = "Congratulations Traveller!";
                         lines[index + 2] = "You have successfully brought all the gifts to me.";
                         lines[index + 3] = "I shall bring this land back to it's former glory!";
@@ -119,6 +137,7 @@ public class AngelDialogueScript : MonoBehaviour
     {
         foreach (char c in lines[index].ToCharArray())
         {
+            audioSource.PlayOneShot(letterSound);
             textComponent.text += c;
             yield return new WaitForSeconds(textSpeed);
         }

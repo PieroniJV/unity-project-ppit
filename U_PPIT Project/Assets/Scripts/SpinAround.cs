@@ -11,8 +11,13 @@ public class SpinAround : MonoBehaviour
     private bool isSpinning = false;
     private Quaternion initialRotation;
     
+    [SerializeField] private AudioClip maulSwingSound;
+    private AudioSource soundManager;
+    
+    
     private void Awake()
     {
+        soundManager = GameObject.Find("SoundManager").GetComponent<AudioSource>();
         weapon.SetActive(false);
         initialRotation = transform.localRotation;
     }
@@ -30,6 +35,7 @@ public class SpinAround : MonoBehaviour
         float spinTimer = 0.0f;
         isSpinning = true;
         
+        soundManager.PlayOneShot(maulSwingSound);
         weapon.SetActive(true);
         
         while (spinTimer < spinDuration)
