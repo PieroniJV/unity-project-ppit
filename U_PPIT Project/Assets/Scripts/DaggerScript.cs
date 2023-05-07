@@ -1,4 +1,3 @@
-using System;
 using TMPro;
 using UnityEngine;
 
@@ -19,7 +18,7 @@ public class DaggerScript : MonoBehaviour
     private void Awake()
     {
         soundManager = GameObject.Find("SoundManager").GetComponent<AudioSource>();
-        numberOfDaggers = 5;
+        numberOfDaggers = 0;
         daggerAmntText.text = numberOfDaggers.ToString();
     }
 

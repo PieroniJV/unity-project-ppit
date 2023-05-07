@@ -1,6 +1,3 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody2D))]
@@ -11,12 +8,17 @@ public class PlayerMovement : MonoBehaviour
     private Vector2 movement;
     private Animator playerAnimator;
 
+    public Vector2 GetPlayerPosition()
+    {
+        return transform.position;
+    }
+    
     private void Awake()
     {
         playerAnimator = gameObject.GetComponentInChildren<Animator>();
         rb2D = GetComponent<Rigidbody2D>();
     }
-    
+
     private void Update()
     {
         movement.x = Input.GetAxis("Horizontal");
@@ -35,9 +37,35 @@ public class PlayerMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
+        UpdateVelocity();
+    }
+    
+    public void UpdateVelocity()
+    {
         Vector2 directionOfMovement = new Vector2(movement.x, movement.y);
         rb2D.velocity = directionOfMovement * (movementSpeed * Time.fixedDeltaTime);
     }
+    
+    public void SetXAxisMovement(float xValue)
+    {
+        movement.x = xValue;
+    }
+
+    public void SetYAxisMovement(float yValue)
+    {
+        movement.y = yValue;
+    }
+
+    public float GetMovementY()
+    {
+        return movement.y;
+    }
+
+    public float GetMovementX()
+    {
+        return movement.x;
+    }
+
     
     //REFERENCES//
     /***************************************************************************************
