@@ -8,7 +8,7 @@ public class NormalEnemyCollision : MonoBehaviour
     private GameObject gameOverScreen;
     private TextMeshProUGUI gameOverText;
     private EnemyHealth enemyHealth;
-    
+    private ScoreScript scoreScript;
     
     private void Awake()
     {
@@ -16,6 +16,7 @@ public class NormalEnemyCollision : MonoBehaviour
         gameOverText = GameObject.Find("Died Text").GetComponent<TextMeshProUGUI>();
         enemyHealth = GetComponentInParent<EnemyHealth>();
         respawnPoint = GameObject.Find("RespawnPoint");
+        scoreScript = GameObject.Find("ScoreObject").GetComponent<ScoreScript>();
         
         gameOverScreen.GetComponent<Image>().color = Color.clear;
         gameOverText.GetComponent<TextMeshProUGUI>().color = Color.clear;
@@ -41,6 +42,7 @@ public class NormalEnemyCollision : MonoBehaviour
         }else if (other.CompareTag("Weapons/Dagger"))
         {
             Destroy(transform.parent.gameObject);
+            scoreScript.AddToKillCount();
         }else if (other.CompareTag("Weapons/Sword"))
         {
             enemyHealth.TakeAwayHealth(1);
