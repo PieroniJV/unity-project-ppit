@@ -32,7 +32,8 @@ public class Database : MonoBehaviour
 
     private static void StartConnection()
     {
-        string connectionString = "URI=file:" + Application.dataPath + dbName;
+        string dbPath = Application.streamingAssetsPath + "/" + dbName;
+        string connectionString = "URI=file:" + dbPath;
         // Create a database connection
         connection = new SqliteConnection(connectionString);
         // Open connection
