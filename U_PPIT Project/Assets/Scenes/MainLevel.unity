@@ -12638,23 +12638,63 @@ PrefabInstance:
       objectReference: {fileID: 1045789203}
     - target: {fileID: 7686855375611959296, guid: a766f07a9fd675b41b3a3fe2b0f27c82, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.8097334
+      value: -5.3500004
       objectReference: {fileID: 0}
     - target: {fileID: 7686855375611959296, guid: a766f07a9fd675b41b3a3fe2b0f27c82, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -116.13
+      value: -115.659996
       objectReference: {fileID: 0}
     - target: {fileID: 7686855375611959296, guid: a766f07a9fd675b41b3a3fe2b0f27c82, type: 3}
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7686855376448293909, guid: a766f07a9fd675b41b3a3fe2b0f27c82, type: 3}
+      propertyPath: m_ScreenX
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7686855376448293909, guid: a766f07a9fd675b41b3a3fe2b0f27c82, type: 3}
+      propertyPath: m_XDamping
+      value: 2.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7686855376448293909, guid: a766f07a9fd675b41b3a3fe2b0f27c82, type: 3}
+      propertyPath: m_DeadZoneWidth
+      value: 0.21
+      objectReference: {fileID: 0}
+    - target: {fileID: 7686855376448293909, guid: a766f07a9fd675b41b3a3fe2b0f27c82, type: 3}
+      propertyPath: m_LookaheadTime
+      value: 0.906
+      objectReference: {fileID: 0}
+    - target: {fileID: 7686855376448293909, guid: a766f07a9fd675b41b3a3fe2b0f27c82, type: 3}
+      propertyPath: m_DeadZoneHeight
+      value: 0.14
+      objectReference: {fileID: 0}
+    - target: {fileID: 7686855376448293909, guid: a766f07a9fd675b41b3a3fe2b0f27c82, type: 3}
+      propertyPath: m_CenterOnActivate
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7686855376448293909, guid: a766f07a9fd675b41b3a3fe2b0f27c82, type: 3}
+      propertyPath: m_LookaheadSmoothing
+      value: 15.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7686855376448293909, guid: a766f07a9fd675b41b3a3fe2b0f27c82, type: 3}
+      propertyPath: m_TargetMovementOnly
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7686855376448293909, guid: a766f07a9fd675b41b3a3fe2b0f27c82, type: 3}
+      propertyPath: m_TrackedObjectOffset.x
+      value: 0.32
+      objectReference: {fileID: 0}
+    - target: {fileID: 7686855376448293909, guid: a766f07a9fd675b41b3a3fe2b0f27c82, type: 3}
+      propertyPath: m_TrackedObjectOffset.y
+      value: 0.47
+      objectReference: {fileID: 0}
     - target: {fileID: 8048107947132703715, guid: a766f07a9fd675b41b3a3fe2b0f27c82, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.8097334
+      value: -5.3500004
       objectReference: {fileID: 0}
     - target: {fileID: 8048107947132703715, guid: a766f07a9fd675b41b3a3fe2b0f27c82, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -116.13
+      value: -115.659996
       objectReference: {fileID: 0}
     - target: {fileID: 8048107947132703715, guid: a766f07a9fd675b41b3a3fe2b0f27c82, type: 3}
       propertyPath: m_LocalPosition.z
