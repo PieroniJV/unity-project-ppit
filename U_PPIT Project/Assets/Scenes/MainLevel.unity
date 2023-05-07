@@ -12673,6 +12673,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7686855375791585900, guid: a766f07a9fd675b41b3a3fe2b0f27c82, type: 3}
+      propertyPath: m_Name
+      value: Mace Graphic
+      objectReference: {fileID: 0}
     - target: {fileID: 7686855376448293909, guid: a766f07a9fd675b41b3a3fe2b0f27c82, type: 3}
       propertyPath: m_ScreenX
       value: 0.5
