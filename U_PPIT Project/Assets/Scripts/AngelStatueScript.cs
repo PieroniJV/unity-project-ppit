@@ -12,14 +12,20 @@ public class AngelStatueScript : MonoBehaviour
 
     private void Awake()
     {
-        theEkey.SetActive(false);
+        if (theEkey != null)
+        {
+            theEkey.SetActive(false);
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("PlayerCollider"))
         {
-            theEkey.SetActive(true);
+            if (theEkey != null)
+            { 
+                theEkey.SetActive(true);
+            }
             canTalkToStatue = true;
         }
     }
@@ -51,7 +57,10 @@ public class AngelStatueScript : MonoBehaviour
         if (other.CompareTag("PlayerCollider"))
         {
             canTalkToStatue = false;
-            theEkey.SetActive(false);
+            if (theEkey != null)
+            {
+                theEkey.SetActive(false);
+            }
             angelDialogueScript.HasStartedDialogue = false;
             angelDialogueScript.gameObject.SetActive(false);
         }
@@ -60,7 +69,10 @@ public class AngelStatueScript : MonoBehaviour
     private void BeginConversationWithStatue()
     {
         canTalkToStatue = false;
-        theEkey.SetActive(false);
+        if (theEkey != null)
+        {
+            theEkey.SetActive(false);  
+        }
         angelDialogueScript.gameObject.SetActive(true);
         angelDialogueScript.ClearText();
         angelDialogueScript.StartDialogue();

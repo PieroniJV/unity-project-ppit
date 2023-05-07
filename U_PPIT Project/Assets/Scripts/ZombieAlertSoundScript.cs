@@ -9,7 +9,11 @@ public class ZombieAlertSoundScript : MonoBehaviour
     
     private void Awake()
     {
-        soundManager = GameObject.Find("SoundManager").GetComponent<AudioSource>();
+        var soundManagerGO = GameObject.Find("SoundManager");
+        if (soundManagerGO != null)
+        {
+            soundManager = soundManagerGO.GetComponent<AudioSource>();
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D other)
