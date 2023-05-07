@@ -185,8 +185,8 @@ MonoBehaviour:
 
 '
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 3beb8c2f5449e6e4e91b25c9420d1173, type: 2}
+  m_sharedMaterial: {fileID: -3622578601491861794, guid: 3beb8c2f5449e6e4e91b25c9420d1173, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -545,7 +545,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: -279.45132, w: 0}
+  m_margin: {x: 0, y: 0, z: -534.2123, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -721,7 +721,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: -297.25638, w: 0}
+  m_margin: {x: 0, y: 0, z: -473.44626, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -1004,7 +1004,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: -297.25638, w: 0}
+  m_margin: {x: 0, y: 0, z: -506.77942, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -1240,6 +1240,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 64254794}
     m_Modifications:
+    - target: {fileID: 324188597674776211, guid: 1b48850fe297b41428a940a1d45a5690, type: 3}
+      propertyPath: m_fontSize
+      value: 16.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 324188597674776211, guid: 1b48850fe297b41428a940a1d45a5690, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 3beb8c2f5449e6e4e91b25c9420d1173, type: 2}
+    - target: {fileID: 324188597674776211, guid: 1b48850fe297b41428a940a1d45a5690, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 16.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 324188597674776211, guid: 1b48850fe297b41428a940a1d45a5690, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -3622578601491861794, guid: 3beb8c2f5449e6e4e91b25c9420d1173, type: 2}
     - target: {fileID: 324188597822247698, guid: 1b48850fe297b41428a940a1d45a5690, type: 3}
       propertyPath: m_Name
       value: BackToMenu Button
