@@ -16,6 +16,9 @@ TagManager:
   - Weapons/Maul
   - ExitTrigger
   - SmallEnemy
+  - CullObject
+  - HouseArea
+  - TreeArea
   layers:
   - Default
   - TransparentFX

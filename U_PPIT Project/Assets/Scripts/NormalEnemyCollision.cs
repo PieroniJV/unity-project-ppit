@@ -24,7 +24,7 @@ public class NormalEnemyCollision : MonoBehaviour
 
     private void ShowGameOverScreen()
     {
-        gameOverScreen.GetComponent<Image>().color = new Color(0f, 0f, 0f, 0.62f);
+        gameOverScreen.GetComponent<Image>().color = new Color(0f, 0f, 0f, 1f);
         gameOverText.GetComponent<TextMeshProUGUI>().color = Color.white;
     }
     

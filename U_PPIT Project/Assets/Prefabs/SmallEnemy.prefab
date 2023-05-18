@@ -75,7 +75,7 @@ GameObject:
   - component: {fileID: 7979649904660171549}
   m_Layer: 0
   m_Name: Follow Radius
-  m_TagString: Untagged
+  m_TagString: CullObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
